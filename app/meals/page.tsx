@@ -1,10 +1,10 @@
+import React from "react";
 import Link from "next/link";
-export default function Home() {
+
+export default function Meals() {
   return (
-    <main>
-      <h1 style={{ color: "white", textAlign: "center" }}>
-        Time to get started!
-      </h1>
+    <>
+      <h1 style={{ color: "white", textAlign: "center" }}>Meals</h1>
       <h3>
         <Link href="/meals">meals</Link>
       </h3>
@@ -17,6 +17,6 @@ export default function Home() {
       <h3>
         <Link href="/meals/3">meal id</Link>
       </h3>
-    </main>
+    </>
   );
 }

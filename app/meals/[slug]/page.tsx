@@ -1,9 +1,11 @@
+import React from "react";
 import Link from "next/link";
-export default function Home() {
+
+export default function mealsID({ params }: { params: { slug: string } }) {
   return (
-    <main>
+    <>
       <h1 style={{ color: "white", textAlign: "center" }}>
-        Time to get started!
+        Meals id : {params.slug}
       </h1>
       <h3>
         <Link href="/meals">meals</Link>
@@ -17,6 +19,6 @@ export default function Home() {
       <h3>
         <Link href="/meals/3">meal id</Link>
       </h3>
-    </main>
+    </>
   );
 }
